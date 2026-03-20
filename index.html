@@ -461,17 +461,24 @@
     }
     .metcon-yt {
       margin-left: auto;
+      flex-shrink: 0;
     }
     .metcon-yt a {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
       color: var(--accent);
       text-decoration: none;
       font-size: 12px;
       font-weight: 600;
-      opacity: 0.7;
-      transition: opacity 0.2s;
+      padding: 4px 10px;
+      border: 1px solid rgba(191, 214, 75, 0.3);
+      border-radius: 8px;
+      transition: all 0.2s;
     }
     .metcon-yt a:hover {
-      opacity: 1;
+      background: rgba(191, 214, 75, 0.1);
+      border-color: var(--accent);
     }
 
     /* DUMBBELL ICON (inline SVG for exercise placeholders) */
